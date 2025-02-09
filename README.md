@@ -11,14 +11,15 @@ usage: havoc_ssrf.py
 -i --ip    The IP to open the socket with (internal IP like 127.0.0.1)
 -p --port    The port to open the socket with (internal port, usually 40056)
 [-A USER_AGENT]    User agent to use for packets  (for havoc dashboard)
-[-H HOSTNAME]    Hostname of Windows machine to use  (for havoc dashboard) 
-[-u USERNAME]    username of spoofed agent (for havoc dashboard)
-[-d DOMAIN_NAME]  domain of the fake connection (for havoc dashboard)
-[-n PROCESS_NAME]  process name of the beacon  (for havoc dashboard)
-[-ip INTERNAL_IP]  internal ip of the havoc server
--a ATTACKER_IP -ap        attacker port for revshell connection
-[-hu HAVOC_USER]    havoc user to perform login to the dashboard and launch exploit
-[-hp HAVOC_PASSWORD]  havoc password to login to the dashboard
+[-H --hostname]    Hostname of Windows machine to use  (for havoc dashboard) 
+[-u --username]   username of spoofed agent (for havoc dashboard)
+[-d --domain-name]   domain of the fake connection (for havoc dashboard)
+[-n --process-name]  process name of the beacon  (for havoc dashboard)
+[-ip --internal-ip]  internal ip of the havoc server
+-a --attacker-ip      ip of the attacker's revshell listener
+-ap --attacker-port       attacker port for revshell connection
+-hu --HAVOC-USER    havoc user to perform login to the dashboard and launch exploit
+-hp --HAVOC-PASSWORD  havoc password to login to the dashboard
 ```
 
 example usage:
